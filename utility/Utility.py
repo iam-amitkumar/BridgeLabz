@@ -2,4 +2,3 @@
 def get_string():
     string = input("Please enter a word/sentence: ")
     return string
-
