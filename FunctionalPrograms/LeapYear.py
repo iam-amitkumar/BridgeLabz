@@ -1,5 +1,5 @@
-"""LeapYear" program tells us that the given year is a leap year
-or not a leap year.
+"""LeapYear" program tells us whether the user input year is leap
+year or not.
 
 @author Amit Kumar
 @version 1.0
