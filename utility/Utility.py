@@ -7,19 +7,25 @@ which will get imported in further programs.
 """
 
 
-# get_string method takes a word/string from the user and return it
+# get_string function takes a word/string from the user and return it
 def get_string():
     string = input("Please enter a word/sentence: ")
     return string
 
 
-# get_integer method takes a integer value from the user and return it
+# get_integer function takes a integer value from the user and return it
 def get_integer():
     number = int(input("Please enter a number: "))
     return number
 
 
-# get_four_digit_year method can be used to take the year input containing only 4 digits otherwise shows warning
+# get_float function takes a float number from the user and return it
+def get_float():
+    float_num = float(input("Please enter a word/sentence: "))
+    return float_num
+
+
+# get_four_digit_year function can be used to take the year input containing only 4 digits otherwise shows warning
 def get_four_digit_year(year):
     if len(year) == 4:  # checking length of year whether it is four digit or not
         year = int(year)  # if the year is four digit assigning it to the "year"
