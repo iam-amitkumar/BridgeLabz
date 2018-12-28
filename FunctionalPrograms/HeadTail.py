@@ -6,7 +6,7 @@ coin N times where N is an user input integer.
 @version 1.0
 @since 26/12/2018
 """
-# Importing important package
+# Importing important modules
 import utility.Utility
 import random
 
