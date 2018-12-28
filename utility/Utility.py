@@ -26,10 +26,11 @@ def get_float():
     return user_float
 
 
-# this function checks whether the user-input year is four digit or not, if not throws warning with @param year
+# this function checks whether the user-input "year" is four digit or not, if not throws warning with @param year
 def get_four_digit_year(year):
-    if len(year) == 4:
-        return int(year)
+    if len(year) == 4:  # checking the length of user input string
+        return int(year)  # converting to integer from string for further operation
     else:
         print("\nPlease enter only four digit year.")
         exit()
+
