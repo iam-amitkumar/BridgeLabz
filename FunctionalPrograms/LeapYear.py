@@ -5,7 +5,7 @@ year or not.
 @version 1.0
 @since 27/12/2018
 """
-# importing important packages
+# importing important modules
 import utility.Utility
 
 year = input("\nPlease enter the year: ")
