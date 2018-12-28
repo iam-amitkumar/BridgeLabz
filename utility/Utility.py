@@ -18,3 +18,9 @@ def get_string():
 def get_integer():
     user_integer = input("Please enter integer value: ")
     return user_integer
+
+
+# get_float function get the float value from the user and return it
+def get_float():
+    user_float = input("Please enter float value: ")
+    return user_float
