@@ -12,3 +12,9 @@ programs by importing this module.
 def get_string():
     user_string = input("Enter your string/sentence: ")
     return user_string
+
+
+# get_integer function get the integer value from the user and return it
+def get_integer():
+    user_integer = input("Please enter integer value: ")
+    return user_integer
