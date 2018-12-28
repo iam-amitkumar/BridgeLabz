@@ -6,7 +6,7 @@ with the user input name.
 @version 1.0
 @since 26/12/2018
 """
-# Importing important packages
+# Importing important modules
 import utility.Utility
 
 a = "Hello <<UserName>>, How are you?"
