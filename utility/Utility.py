@@ -1,0 +1,14 @@
+"""Utility module contains all the important or commonly
+used functions/methods which can be further used in the
+programs by importing this module.
+
+@author Amit Kumar
+@version 1.0
+@since 26/12/2018
+"""
+
+
+# get_string function get the string value from the user and return it
+def get_string():
+    user_string = input("Enter your string/sentence: ")
+    return user_string
