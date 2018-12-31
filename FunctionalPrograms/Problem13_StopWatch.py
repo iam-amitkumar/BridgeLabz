@@ -1,7 +1,6 @@
-""" that takes two integer command­line arguments x and y
-and prints the Euclidean distance from the point (x, y) to
-the origin (0, 0) where point x and y is provided through
-command-line
+""" This program find the elapsed time between start and
+stop time (captured time two times and subtracting both
+the time to find the difference between them)
 
 @author Amit Kumar
 @version 1.0
