@@ -73,5 +73,11 @@ def boolean_two_dimensional_array(rows, columns):
     return mat
 
 
-
+# this function display returned user-defined array having @param rows, @param columns and @param mat
+def display_arr(rows, columns, mat):
+    print()
+    for i in range(rows):
+        for j in range(columns):
+            print(mat[i][j], end="   ")
+        print("\n")
 
