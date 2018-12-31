@@ -34,3 +34,44 @@ def get_four_digit_year(year):
         print("\nPlease enter only four digit year.")
         exit()
 
+
+# this function create a user-defined two-dimensional array of integer type and return it
+# having @param rows and @param columns and @return the 2D integer array
+def int_two_dimensional_array(rows, columns):
+    mat = [[0 for i in range(columns)] for j in range(rows)]
+
+    for i in range(rows):
+        for j in range(columns):
+            mat[i][j] = int(input("Enter the element for integer array: "))
+    return mat
+
+
+# this function create a user-defined two-dimensional array of float type and return it
+# having @param rows and @param columns and @return the 2D float array
+def float_two_dimensional_array(rows, columns):
+    mat = [[0 for i in range(columns)] for j in range(rows)]
+
+    for i in range(rows):
+        for j in range(columns):
+            mat[i][j] = float(input("Enter the element for float array: "))
+    return mat
+
+
+# this function create a user-defined two-dimensional array of boolean type and return it
+# having @param rows and @param columns and @return the 2D boolean array
+def boolean_two_dimensional_array(rows, columns):
+    mat = [[0 for i in range(columns)] for j in range(rows)]
+
+    for i in range(rows):
+        for j in range(columns):
+            val = int(input("Enter the element boolean: "))
+            if val == int(1) or val == int(0):
+                mat[i][j] = val
+            else:
+                print("Please enter only boolean value,i.e., 0 or 1.")
+                exit()
+    return mat
+
+
+
+
