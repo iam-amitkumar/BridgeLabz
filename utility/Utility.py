@@ -81,3 +81,12 @@ def display_arr(rows, columns, mat):
             print(mat[i][j], end="   ")
         print("\n")
 
+
+# this function create user-input List of length n
+def user_int_list(list_size):
+    user_list = []
+    for i in range(0, list_size):
+        val = int(input("Enter an integer value: "))
+        user_list.append(val)
+    return user_list
+
