@@ -1,3 +1,10 @@
+""" TwoDimArray program take the values from the user and print matrix
+of integer, float and boolean type.
+
+@author Amit Kumar
+@version 1.0
+@since 29/12/2018
+"""
 import utility.Utility
 
 int_rows = int(input('enter number of rows for integer matrix :'))
