@@ -84,11 +84,9 @@ def display_arr(rows, columns, mat):
 
 # this function create user-input List of length n with @param size of the list
 def user_int_list(list_size):
-    user_list = []
+    user_list = []  # initializing a blank list
     for i in range(0, list_size):
-        val = int(input("Enter an integer value: "))
-        user_list.append(val)
+        val = int(input("Enter an integer value: "))  # taking input from the list
+        user_list.append(val)  # adding each user-input value to the list
     return user_list
-
-
 
