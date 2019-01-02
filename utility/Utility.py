@@ -84,7 +84,7 @@ def display_arr(rows, columns, mat):
         print("\n")
 
 
-# this function create user-input List of length n with @param size of the list
+# this function create user-input List of length n with @param size of the list and @return user-defined list
 def user_int_list(list_size):
     user_list = []  # initializing a blank list
     for i in range(0, list_size):
@@ -93,7 +93,7 @@ def user_int_list(list_size):
     return user_list
 
 
-# quadratic equation to find the roots of the equation
+# quadratic equation to find the roots of the equation, function contains @param a, @param b and @param c
 def quad_equation(a, b, c):
     determinant = (b ** 2) - (4 * a * c)  # finding determinant of the given values using formula
     if determinant > 0:  # finding the roots if the value of determinant is greater than zero
