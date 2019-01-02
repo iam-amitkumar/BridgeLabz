@@ -8,6 +8,7 @@ programs by importing this module.
 """
 import cmath
 
+
 # get_string function get the string value from the user and return it
 def get_string():
     user_string = input("Enter your string/sentence: ")
