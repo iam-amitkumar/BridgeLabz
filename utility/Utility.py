@@ -93,15 +93,15 @@ def user_int_list(list_size):
 
 # quadratic equation to find the roots of the equation
 def quad_equation(a, b, c):
-    determinant = (b ** 2) - (4 * a * c)
-    if determinant > 0:
+    determinant = (b ** 2) - (4 * a * c)  # finding determinant of the given values using formula
+    if determinant > 0:  # finding the roots if the value of determinant is greater than zero
         root1 = (-b + cmath.sqrt(determinant))/(2*a)
         root2 = (-b - cmath.sqrt(determinant))/(2*a)
         print('The solution are {0} and {1}'.format(root1, root2))
-    elif determinant == 0:
+    elif determinant == 0:  # finding the roots if the value of determinant is equals to zero
         root1 = (-b/(2*a))
-        print('The solution are {0} and {1}'.format(root1, root1))
-    else:
+        print('The solution are {0} and {1}'.format(root1, root1))  # both the rots are same if the determinant is zero
+    else:  # finding the roots if the value of determinant is less than zero
         real_part = (-b/(2*a))
         imaginary_part = cmath.sqrt(-determinant)/(2*a)
         print('\nRoot 1 = {0} + {1}i  Root 2 = {0} + {1}i'.format(real_part, imaginary_part, real_part, imaginary_part))
