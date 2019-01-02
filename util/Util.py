@@ -26,7 +26,7 @@ def is_anagram(s1, s2):
 # this function returns True if the number is a Prime Number having @param num and @return boolean value
 def is_prime(num):
     count = 0
-    for i in range(2, num/2):
+    for i in range(2, int(num/2)):
         if num % i == 0:
             count += 1
     if count == 0:
