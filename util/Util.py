@@ -26,14 +26,23 @@ def is_anagram(s1, s2):
 # this function returns True if the number is a Prime Number having @param num and @return boolean value
 def is_prime(num):
     count = 0
-    for i in range(2, int(num/2)):
-        if num % i == 0:
-            count += 1
-    if count == 0:
+    for i in range(2, int(num/2)):  # propagating from  number 2 to the given number
+        if num % i == 0:  # checking check whether any number is divisible by any other number except 1 or itself
+            count += 1  # incrementing the value of count if the number is divisible by any other number
+    if count == 0:  # returning true if the value of count is zero, i.e., number is not divisible by any other number
         return True
 
 
-
+# this function returns boolean value depending on the result whether the given number is palindrome or not
+def is_palindrome(num):
+    temp = num  # storing the number into a temporary variable to compare it with the reversed number
+    r = 0
+    while num != 0:
+        rev = int(num % 10)  # picking up the last number
+        r = r * 10 + rev  # reversing the number
+        num = int(num / 10)  # trimming the last number
+    if temp == r:  # comparing the reversed number with the given number, if matches then return True
+        return True
 
 
 
