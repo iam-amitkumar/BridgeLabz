@@ -6,7 +6,7 @@ programs by importing this module.
 @version 1.0
 @since 26/12/2018
 """
-
+import cmath
 
 # get_string function get the string value from the user and return it
 def get_string():
@@ -89,4 +89,20 @@ def user_int_list(list_size):
         val = int(input("Enter an integer value: "))  # taking input from the list
         user_list.append(val)  # adding each user-input value to the list
     return user_list
+
+
+# quadratic equation to find the roots of the equation
+def quad_equation(a, b, c):
+    determinant = (b ** 2) - (4 * a * c)
+    if determinant > 0:
+        root1 = (-b + cmath.sqrt(determinant))/(2*a)
+        root2 = (-b - cmath.sqrt(determinant))/(2*a)
+        print('The solution are {0} and {1}'.format(root1, root2))
+    elif determinant == 0:
+        root1 = (-b/(2*a))
+        print('The solution are {0} and {1}'.format(root1, root1))
+    else:
+        real_part = (-b/(2*a))
+        imaginary_part = cmath.sqrt(-determinant)/(2*a)
+        print('\nRoot 1 = {0} + {1}i  Root 2 = {0} + {1}i'.format(real_part, imaginary_part, real_part, imaginary_part))
 
