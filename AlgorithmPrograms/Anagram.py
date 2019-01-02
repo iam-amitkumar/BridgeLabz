@@ -1,3 +1,10 @@
+"""Anagram program checks whether the given user-input
+strings are anagram or not.
+
+@author Amit Kumar
+@version 1.0
+@since 02/01/2019
+"""
 # importing important modules
 import utility.Utility
 import util.Util
