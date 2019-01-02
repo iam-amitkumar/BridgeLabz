@@ -6,7 +6,7 @@ programs by importing this module.
 @version 1.0
 @since 02/01/2019
 """
-
+import utility.Utility
 
 # this function determine whether the given strings are anagram or not, it gives boolean result depending on result
 # contains @param string1 and @param string2 and @returns boolean value
@@ -45,5 +45,36 @@ def is_palindrome(num):
         return True
 
 
+def temperature_conversion(option):
+    if option == 1:
+        print("\nEnter the temperature in Celcius: ")
+        temp = utility.Utility.get_float()
+        res = float((temp*9/5)+32)
+        return res
+    elif option == 2:
+        print("\nEnter the temperature in Fahrenheit: ")
+        temp = utility.Utility.get_float()
+        res = float((temp-32)*5/9)
+        return res
+    else:
+        print("Invalid input")
 
 
+def to_binary(dec):
+    binary = " "
+    while dec != 0:
+        rev = int(dec % 2)
+        binary = str(rev) + binary
+        dec = int(dec / 2)
+    return binary
+
+
+def to_decimal(binary):
+    dec = 0
+    count = 0
+    while binary != 0:
+        r = int(binary % 10)
+        dec = dec + r * (2 ** count)
+        count += 1
+        binary = int(binary / 10)
+    return int(dec)
