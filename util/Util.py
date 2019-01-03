@@ -61,21 +61,23 @@ def temperature_conversion(option):
         print("Invalid input")
 
 
+# to_binary function have @param decimal value and after conversion @return binary value in string type
 def to_binary(dec):
-    binary = " "
+    binary = " "  # have blank string type to concat further values to it
     while dec != 0:
         rev = int(dec % 2)
         binary = str(rev) + binary
         dec = int(dec / 2)
-    return binary
+    return binary  # return binary after conversion
 
 
+# to_decimal function have @param binary value and @return decimal value
 def to_decimal(binary):
     dec = 0
     count = 0
     while binary != 0:
-        r = int(binary % 10)
+        r = int(binary % 10)  # picking up the last number
         dec = dec + r * (2 ** count)
         count += 1
-        binary = int(binary / 10)
-    return int(dec)
+        binary = int(binary / 10)  # trimming the last number
+    return int(dec)  # return binary after conversion
