@@ -45,6 +45,7 @@ def is_palindrome(num):
         return True
 
 
+# this function converts the temperature from celcius to fahrenheit and vice-versa(according to the user)
 def temperature_conversion(option):
     if option == 1:
         print("\nEnter the temperature in Celcius: ")
