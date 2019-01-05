@@ -4,7 +4,7 @@ always guesses the answer with n questions uses Binary Search
 to find the number.
 
 @author Amit Kumar
-@version 1.0
+@version 1.1
 @since 04/01/2019
 """
 # importing important modules
