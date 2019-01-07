@@ -21,11 +21,16 @@ try:
                 l1.insert_at_end(word)  # user-defined method to append an item to the list
 
     l1.display_list()
-    search1 = str(input("\nEnter your string to search: "))
-    if l1.search(search1):
-        l1.delete_node(search1)
-    else:
-        l1.insert_at_end(search1)
+
+    try:
+        search1 = str(input("\nEnter your string to search: "))
+
+        if l1.search(search1):
+            l1.delete_node(search1)
+        else:
+            l1.insert_at_end(search1)
+    except Exception as e:  # handling the exception on user-input for searching the word in the file
+        print(e)
 
     # displaying the list created from the file
     l1.display_list()
