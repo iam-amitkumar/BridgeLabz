@@ -1,3 +1,16 @@
+"""Class present in this file contains the important methods for LinkedList like:
+create LinkedList
+search an element in LinkedList
+delete a node in LinkedList
+print the LinkedList
+append an item in LinkedList, etc.
+
+@author Amit Kumar
+@version 1.0
+@since 07/01/2019
+"""
+
+
 # Node class
 class Node:
     def __init__(self, value):  # constructor
