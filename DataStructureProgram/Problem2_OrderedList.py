@@ -46,3 +46,4 @@ else:
 
 l1.display_list()  # printing the LinkedList after adding/removing the number in/from the LinkedList
 l1.append_list_to_file_problem2()  # adding/removing the number in/from the file
+print("\nText file Updated")
