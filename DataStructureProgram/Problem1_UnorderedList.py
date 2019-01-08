@@ -10,12 +10,14 @@ list into a file.
 # importing important modules
 from DataStructureProgram.LinkedList import *
 
+global f
+
 # creating object of SingleLinkedList class of DataStructureProgram package to access all the methods
 l1 = SingleLinkedList()
 
 try:
     # reading each lines of file as word and appending it to the LinkedList
-    with open('UnorderedList1.txt', 'r') as f:
+    with open('/home/admin1/PycharmProjects/BridgeLabzz/DataStructureProgram/UnorderedList.txt', 'r') as f:
         for line in f:
             for word in line.split():  # splitting the sentence of the file into words
                 l1.insert_at_end(word)  # user-defined method to append an item to the list
@@ -36,8 +38,10 @@ try:
     l1.display_list()
 
     # appending/deleting the searched word by the user
-    l1.append_list_to_file()
+    l1.append_list_to_file_problem1()
 
 # handling the exception if file is not fount while reading
 except FileNotFoundError:
     print("\nYour file not found on your drive. \nPlease check the name or path of the file.")
+finally:
+    f.close()  # closing the opened file
