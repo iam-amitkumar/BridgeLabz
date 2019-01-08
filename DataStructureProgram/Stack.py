@@ -25,6 +25,8 @@ class Node:
 # class Stack contains important methods regarding Stack
 class Stack:
     # constructor
+    head = None
+
     def __init__(self):
         self.top = None
 
@@ -57,3 +59,20 @@ class Stack:
         while p is not None:
             print(p.info, " ")
             p = p.link
+
+    def element_at(self, index):
+        temp = self.head
+        for i in range(0, index):
+            temp = temp.next
+        return temp.data
+
+    def size(self):
+        if self.is_empty():
+            return 0
+
+        count = 0
+        p = self.top
+        while p is not None:
+            count += 1
+            p = p.link
+        return count
