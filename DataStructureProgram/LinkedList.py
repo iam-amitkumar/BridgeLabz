@@ -99,9 +99,41 @@ class SingleLinkedList:
             print()
 
 # this method write all the items present in the list to a text file
-    def append_list_to_file(self):
-        with open("UnorderedList1.txt", "w") as output:  # specific text file
+    def append_list_to_file_problem1(self):
+        global output
+        try:
+            with open('/home/admin1/PycharmProjects/BridgeLabzz/DataStructureProgram/UnorderedList.txt', 'w') as output:
+                p = self.start
+                while p is not None:
+                    output.write(str(p.info)+" ")  # writing the items of the list after adding or deleting to the file
+                    p = p.link
+        except Exception as e:
+            print(e)
+        finally:
+            output.close()
+
+# this method sort the entire LinkedList in ascending order using bubble sort technique
+    def bubble_sort(self):
+        end = None
+        while end != self.start.link:
             p = self.start
-            while p is not None:
-                output.write(str(p.info)+" ")  # writing the items of the list after adding or deleting to the file
+            while p.link != end:
+                q = p.link
+                if p.info > q.info:
+                    p.info, q.info = q.info, p.info
                 p = p.link
+            end = p
+
+# this method write all the items present in the list to a text file
+    def append_list_to_file_problem2(self):
+        global output
+        try:
+            with open('/home/admin1/PycharmProjects/BridgeLabzz/DataStructureProgram/OrderedList.txt', 'w') as output:
+                p = self.start
+                while p is not None:
+                    output.write(str(p.info)+" ")  # writing the items of the list after adding or deleting to the file
+                    p = p.link
+        except Exception as e:
+            print(e)
+        finally:
+            output.close()
