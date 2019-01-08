@@ -48,8 +48,8 @@ def int_two_dimensional_array(rows, columns):
     return mat
 
 
-'''this function create a user-defined two-dimensional array of float type and return it
-having @param rows and @param columns and @return the 2D float array'''
+# this function create a user-defined two-dimensional array of float type and return it
+# having @param rows and @param columns and @return the 2D float array'''
 
 
 def float_two_dimensional_array(rows, columns):
@@ -61,8 +61,8 @@ def float_two_dimensional_array(rows, columns):
     return mat
 
 
-'''this function create a user-defined two-dimensional array of boolean type and return it
-aving @param rows and @param columns and @return the 2D boolean array'''
+# this function create a user-defined two-dimensional array of boolean type and return it
+# having @param rows and @param columns and @return the 2D boolean array
 
 
 def boolean_two_dimensional_array(rows, columns):
@@ -113,12 +113,12 @@ def quad_equation(a, b, c):
         print('\nRoot 1 = {0} + {1}i  Root 2 = {0} + {1}i'.format(real_part, imaginary_part, real_part, imaginary_part))
 
 
-'''binary_search is function with @param list and @ target and @return binary value this function search for an element 
-in the given list binary search only works on sorted list because it divide the list into two halves on the basis of 
-mid point and first search the element at mid-point if not found then according to the value it search in one half 
-leaving the second half again in that half it divide it into two halves oon the basis of mid point, if found the value
-at it then return True else again search in the respective part according to the value and so on. 
-If the element not found in the list then return False.'''
+# binary_search is function with @param list and @ target and @return binary value this function search for an element
+# in the given list binary search only works on sorted list because it divide the list into two halves on the basis of
+# mid point and first search the element at mid-point if not found then according to the value it search in one half
+# leaving the second half again in that half it divide it into two halves oon the basis of mid point, if found the value
+# at it then return True else again search in the respective part according to the value and so on.
+# If the element not found in the list then return False.
 
 
 def binary_search(li, target):
@@ -138,10 +138,10 @@ def binary_search(li, target):
     return False  # returning False if element not found
 
 
-'''this function is used to sort the list having @param list while comparing the current element from all of its 
-previous elements (starting from second element) if previous  elements are greater then shift them to the right. So all
-the elements having larger value shifts to the right leaving all the elements with smaller value left to the left side 
-and iterating this step to the last element of the list led to the sorting of the whole list.'''
+# this function is used to sort the list having @param list while comparing the current element from all of its
+# previous elements (starting from second element) if previous  elements are greater then shift them to the right. So
+# all the elements having larger value shifts to the right leaving all the elements with smaller value left to the left
+# side and iterating this step to the last element of the list led to the sorting of the whole list.
 
 
 def insertion_sort(list1):
@@ -157,8 +157,8 @@ def insertion_sort(list1):
             list1[current_position] = current_value  # shifting smaller element to the left index
 
 
-'''Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are
-in wrong order.'''
+# Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are
+# in wrong order.
 
 
 def bubble_sort(arr):
@@ -172,9 +172,9 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 
-''' merge_sort is a recursive function having @param list that continually splits a list in half. If the list is empty 
-# or has one item, it is sorted by definition. If the list has more than one item, we split the list and recursively 
-# invoke a merge sort on both halves.'''
+# merge_sort is a recursive function having @param list that continually splits a list in half. If the list is empty
+# or has one item, it is sorted by definition. If the list has more than one item, we split the list and recursively
+# invoke a merge sort on both halves.
 
 
 def merge_sort(arr):
