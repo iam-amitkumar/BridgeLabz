@@ -64,7 +64,6 @@ class Stack:
     def size(self):
         if self.is_empty():
             return 0
-
         count = 0
         p = self.top
         while p is not None:
