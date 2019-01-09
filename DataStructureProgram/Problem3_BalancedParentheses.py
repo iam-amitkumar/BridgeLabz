@@ -46,7 +46,7 @@ check = check_bal(exp)
 
 if s1.is_empty() and check:  # printing the result if function return True otherwise False
     print("\n>>> Your expression is balanced <<<")
-elif s1.is_empty():  # if the user-input string don't has any parentheses then print "Balanced"
-    print("\n>>> Your expression is balanced <<<")
+# elif s1.is_empty():  # if the user-input string don't has any parentheses then print "Balanced"
+#     print("\n>>> Your expression is balanced <<<")
 else:
     print("\n>>> Your expression is not balanced <<<")
