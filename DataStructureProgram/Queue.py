@@ -24,6 +24,7 @@ class Node:
 
 # Queue class contains all the methods of operation can do with Queue
 class Queue:
+    head = None
     # constructor
     def __init__(self):
         self.front = None
@@ -68,3 +69,9 @@ class Queue:
             print(p.info, " ", end='')  # printing the elements one by one
             p = p.link
         print()
+
+    def element_at(self,index):
+        temp=self.head
+        for i in range(index):
+            temp=temp.next
+        return temp.data
