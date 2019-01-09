@@ -12,6 +12,7 @@ from DataStructureProgram.Queue import *
 # creating the object of Queue class
 q1 = Queue()
 global opinion, amount, size_of_queue  # globalizing the variables
+
 amt_of_money = 1000  # initializing the bank balance
 print("\nYour cleared balance: ", amt_of_money)
 try:  # handling the invalid user input for "size of the queue"
@@ -23,7 +24,6 @@ except Exception as e:
 try:
     for i in range(size_of_queue):
         q1.enqueue(i)
-    q1.display()
 except Exception as e:
     print(e)
 
