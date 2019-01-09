@@ -8,6 +8,7 @@ character to the rear of the deque.
 @version 1.0
 @since 09/01/2019
 """
+# importing importing modules of DataStructure
 from DataStructureProgram.Deque import *
 
 
