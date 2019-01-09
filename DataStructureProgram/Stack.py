@@ -60,12 +60,7 @@ class Stack:
             print(p.info, " ")
             p = p.link
 
-    def element_at(self, index):
-        temp = self.head
-        for i in range(0, index):
-            temp = temp.next
-        return temp.data
-
+    # this method return the total size of the stack
     def size(self):
         if self.is_empty():
             return 0
