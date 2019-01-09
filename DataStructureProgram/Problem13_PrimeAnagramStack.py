@@ -45,4 +45,4 @@ while i < len(arr):
         j += 1
     i += 1
 
-s1.display()  # printing the stack after adding all the anagrams in the stack
+s1.display()  # printing the stack after pushing all the anagrams in the stack
