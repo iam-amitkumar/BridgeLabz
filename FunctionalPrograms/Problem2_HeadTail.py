@@ -13,8 +13,13 @@ import random
 tail = 0
 head = 0
 
+global number_of_flips
+
 # taking user input to determine that how many times coin will flip
-number_of_flips = utility.Utility.get_integer()
+try:
+    number_of_flips = utility.Utility.get_integer()
+except Exception as e:
+    print(e)
 
 for i in range(0, number_of_flips):
     rand = random.random()
