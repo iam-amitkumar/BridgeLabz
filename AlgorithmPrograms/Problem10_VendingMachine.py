@@ -9,8 +9,14 @@ as a Change using recursion.
 # importing the important modules
 import utility.Utility
 
+global amount1
+
 print("Enter the amount of money you want to withdraw ")
-amount1 = utility.Utility.get_integer()
+try:
+    amount1 = utility.Utility.get_integer()
+except Exception as e:
+    print(e)
+
 print()
 
 
