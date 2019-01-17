@@ -10,6 +10,12 @@ a sum of powers of 2.
 import utility.Utility
 import util.Util
 
+global deci
+
 print()  # putting one white-space line before printing anything on the console
-deci = utility.Utility.get_integer()  # calling the function
+try:
+    deci = utility.Utility.get_integer()  # calling the function
+except Exception as e:
+    print(e)
+
 print("Binary representation of ", deci, ": ", util.Util.to_binary(deci))  # printing the output
