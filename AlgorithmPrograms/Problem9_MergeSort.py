@@ -10,7 +10,13 @@ to sort the full array using recursion technique.
 # importing important modules
 import utility.Utility
 
-input_string = input("\nEnter the numbers: ")
+global input_string
+
+try:
+    input_string = utility.Utility.get_integer()
+except Exception as e:
+    print(e)
+
 int_list = input_string.split()  # converting user-input string into string list
 int_list = [int(i) for i in int_list]  # converting the string list into the integer list
 print("\nGiven array is", end="\n")
