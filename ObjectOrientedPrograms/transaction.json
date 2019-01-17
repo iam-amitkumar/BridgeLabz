@@ -1,0 +1,28 @@
+{
+  "transaction": {
+    "Amit": {
+      "customer_name": "Amit",
+      "company_symbol": "LLP",
+      "buy_sell": "Buy",
+      "total_share": 1,
+      "total_Price": 10000,
+      "time": "2019-01-17 12:49"
+    },
+    "Alisa": {
+      "customer_name": "Alisa",
+      "company_symbol": "LLP",
+      "buy_sell": "Sell",
+      "total_share": 1,
+      "total_Price": 10000,
+      "time": "2019-01-15 19:29"
+    },
+    "Fred": {
+      "customer_name": "Fred",
+      "company_symbol": "Int",
+      "buy_sell": "Sell",
+      "total_share": 1,
+      "total_Price": 1467,
+      "time": "2019-01-17 11:42"
+    }
+  }
+}
