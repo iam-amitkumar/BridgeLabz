@@ -12,36 +12,42 @@ from DataStructureProgram.LinkedList import *
 
 global f
 
-# creating object of SingleLinkedList class of DataStructureProgram package to access all the methods
-l1 = SingleLinkedList()
-
-try:
-    # reading each lines of file as word and appending it to the LinkedList
-    with open('/home/admin1/PycharmProjects/BridgeLabzz/DataStructureProgram/UnorderedList.txt', 'r') as f:
-        for line in f:
-            for word in line.split():  # splitting the sentence of the file into words
-                l1.insert_at_end(word)  # user-defined method to append an item to the list
-
-    l1.display_list()
+def UnorderedList():
+    # creating object of SingleLinkedList class of DataStructureProgram package to access all the methods
+    l1 = SingleLinkedList()
 
     try:
-        search1 = str(input("\nEnter your string to search: "))
+        # reading each lines of file as word and appending it to the LinkedList
+        with open('/home/admin1/PycharmProjects/BridgeLabzz/DataStructureProgram/UnorderedList.txt', 'r') as f:
+            for line in f:
+                for word in line.split():  # splitting the sentence of the file into words
+                    l1.insert_at_end(word)  # user-defined method to append an item to the list
 
-        if l1.search(search1):
-            l1.delete_node(search1)
-        else:
-            l1.insert_at_end(search1)
-    except Exception as e:  # handling the exception on user-input for searching the word in the file
-        print(e)
+        l1.display_list()
 
-    # displaying the list created from the file
-    l1.display_list()
+        try:
+            search1 = str(input("\nEnter your string to search: "))
 
-    # appending/deleting the searched word by the user
-    l1.append_list_to_file_problem1()
+            if l1.search(search1):
+                l1.delete_node(search1)
+            else:
+                l1.insert_at_end(search1)
+        except Exception as e:  # handling the exception on user-input for searching the word in the file
+            print(e)
 
-# handling the exception if file is not fount while reading
-except FileNotFoundError:
-    print("\nYour file not found on your drive. \nPlease check the name or path of the file.")
-finally:
-    f.close()  # closing the opened file
+        # displaying the list created from the file
+        l1.display_list()
+
+        # appending/deleting the searched word by the user
+        l1.append_list_to_file_problem1()
+
+    # handling the exception if file is not fount while reading
+    except FileNotFoundError:
+        print("\nYour file not found on your drive. \nPlease check the name or path of the file.")
+    finally:
+        f.close()  # closing the opened file
+
+
+
+if __name__ == '__main__':
+    UnorderedList()
