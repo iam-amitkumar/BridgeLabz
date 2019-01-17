@@ -1,0 +1,13 @@
+{"Rice":[{"name":"Basmati","weight":5,"price":40},
+                 {"name":"BrownRice","weight":3,"price":135},
+                 {"name": "Kolam", "weight":10, "price": 51}
+                ],
+         "Pulse":[{"name": "Chana", "weight":10, "price": 100},
+                  {"name": "WhiteChana", "weight":9, "price": 105},
+                  {"name": "KabuliChana", "weight": 5, "price": 110}
+                  ],
+         "Wheat":[{"name":"Broken Wheat","weight":20,"price":31},
+                  {"name":"Indian White Wheat ","weight":10,"price":150},
+                  {"name":"Red Wheat Grain","weight":50,"price":23}
+                ]
+         }
