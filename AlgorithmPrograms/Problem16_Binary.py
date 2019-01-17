@@ -11,6 +11,8 @@ ii. Find the resultant number is the number is a power of 2.
 import utility.Utility
 import util.Util
 
+global number
+
 
 # function to convert any bit binary value to the 8-bit binary value with @param string and @return string of 8-bit
 def eight_bits(s):
@@ -29,7 +31,10 @@ def is_power_of_two(num):
     return False  # # return False if the @param is not power of 2
 
 
-number = utility.Utility.get_integer()
+try:
+    number = utility.Utility.get_integer()
+except Exception as e:
+    print(e)
 
 # solution of first bit of the question
 print("\nI.")
@@ -52,7 +57,7 @@ reversed_nibble = second_nibble + first_nibble  # reversing the nibbles by swapp
 rev_nibble = ''.join(reversed_nibble)  # converting the reversed list into list
 print("\nReversed Nibble: ", int(rev_nibble))
 dec_value = util.Util.to_decimal(int(rev_nibble))
-print("\nDecimal representation of", rev_nibble, ": ",dec_value)  # converting reversed
+print("\nDecimal representation of", rev_nibble, ": ", dec_value)  # converting reversed
 # nibbles of binary value again into decimal
 
 # solution of second bit of the question
@@ -61,4 +66,3 @@ if is_power_of_two(dec_value):
     print("Yes, the resultant number is power of 2.")
 else:
     print("No, the resultant number is not power of 2.")
-
