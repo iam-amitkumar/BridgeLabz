@@ -1,0 +1,34 @@
+{
+  "customers": {
+    "Alisa": {
+      "amount": 70000,
+      "cname": "Alisa",
+      "noOfShare": 12
+    },
+    "Amit": {
+      "amount": 62335,
+      "cname": "Amit",
+      "noOfShare": 26
+    },
+    "Fred": {
+      "amount": 27467,
+      "cname": "Fred",
+      "noOfShare": 1
+    },
+    "Harry": {
+      "amount": 2000,
+      "cname": "Harry",
+      "noOfShare": 10
+    },
+    "John": {
+      "amount": 15000,
+      "cname": "John",
+      "noOfShare": 16
+    },
+    "Kumar": {
+      "amount": 25000,
+      "cname": "Kumar",
+      "noOfShare": 15
+    }
+  }
+}
