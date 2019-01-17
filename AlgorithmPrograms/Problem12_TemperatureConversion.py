@@ -9,11 +9,16 @@ from Celcius to Fahrenheit and vice-versa after asking from the user.
 import utility.Utility
 import util.Util
 
+global t
+
 # asking from the user whether he/she want to convert from Celcius to Fahrenheit aor vice-versa
 print("\nPlease enter your option: \n1. Press 1 to convert Celsius to Fahrenheit \n2. Press 2 to convert "
       "Fahrenheit to Celsius \n")
 
-t = utility.Utility.get_float()
+try:
+    t = utility.Utility.get_float()
+except Exception as e:
+    print(e)
 
 print("Temperature: ", util.Util.temperature_conversion(t))  # printing temperature after passing the user-input
 # to the function
