@@ -31,13 +31,14 @@ days = {
     }
 
 
+global day, month, year
 # storing values to the variables for further calculation taken through  command-line argument
-day = int(sys.argv[1])
-month = int(sys.argv[2])
-year = int(sys.argv[3])
+try:
+    day = int(sys.argv[1])
+    month = int(sys.argv[2])
+    year = int(sys.argv[3])
+except Exception as e:
+    print(e)
 
 day_conversion = day_of_week(day, month, year)
 print(days.get(day_conversion, -1))  # printing day of the week after passing values to the function
-
-
-
