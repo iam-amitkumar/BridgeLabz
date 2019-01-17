@@ -5,6 +5,9 @@ given in the input using Newton's method.
 @version 1.0
 @since 03/01/2019
 """
+import utility.Utility
+
+global c
 
 
 # function to calculate the square root of a user-input number contains @param number, @param t and @param epsilon
@@ -16,7 +19,11 @@ def sqrt(no, t, epsilon):
 
 
 epsilon1 = 1e-15  # declaring the constant value of epsilon
-c = int(input("\nEnter the Number: "))
+try:
+    c = utility.Utility.get_integer()
+except Exception as e:
+    print(e)
+
 t1 = c  # assigning the value of user-input value c to t1 for further calculation
 res = sqrt(c, t1, epsilon1)  # calling the function
 print("\nSquare root of ", c, ": ", res)
