@@ -1,0 +1,60 @@
+{
+  "inventory": {
+    "Pulse": [
+      {
+        "Name": "Dry Beans",
+        "Price": 18,
+        "weight": 60
+      },
+      {
+        "Name": "Chickpeas",
+        "Price": 22,
+        "weight": 47
+      },
+      {
+        "Name": "Urad",
+        "Price": 120,
+        "weight": 42
+      }
+    ],
+    "Rice": [
+      {
+        "Name": "Brown Rice",
+        "Price": 62,
+        "weight": 51
+      },
+      {
+        "Name": "Sticky Rice",
+        "Price": 12,
+        "weight": 27
+      },
+      {
+        "Name": "Basmati",
+        "Price": 83,
+        "weight": 49
+      },
+      {
+        "Name": "Indian Rice",
+        "Price": 80,
+        "weight": 102
+      }
+    ],
+    "Wheat": [
+      {
+        "Name": "Emmer",
+        "Price": 46,
+        "weight": 61
+      },
+      {
+        "Name": "Spelt",
+        "Price": 19,
+        "weight": 20
+      },
+      {
+        "Name": "Brown",
+        "Price": 40,
+        "weight": 42
+      }
+    ]
+  }
+}
