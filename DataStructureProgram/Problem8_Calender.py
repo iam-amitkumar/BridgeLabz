@@ -38,7 +38,6 @@ def calender(month, year):
     x = y0 + y0 // 4 - y0 // 100 + y0 // 400
     m0 = m + 12 * ((14 - m) // 12) - 2
     d0 = (d + x + 31 * m0 // 12) % 7
-    print(d0)
 
     if isleap_year(year):  # checks if the month entered is February leap year or not
         days[month] = 29  # if yes sets the no. of days in February as 29
@@ -47,7 +46,7 @@ def calender(month, year):
     column = 7
     two_d_array = [[0 for j in range(column)] for i in range(row)]  # create empty 2d array for calender
 
-    print("\n", month, year, 'Calender: \n')
+    print("\n            Calender \n--------------------------------")
 
     for i in range(0, 6 + 1):
         print(day[i], end=' ')  # print day's for calender
@@ -80,12 +79,12 @@ def calender(month, year):
 ########################################################################################################################
 global month_, year_  # globalizing the variables use them as local while handling exception
 try:
-    month_ = int(input('Enter Month:'))
+    month_ = int(input('\nEnter Month: '))
 except Exception as e:  # handling exception for 'month' input
     print(e)
     print("Enter integer only ")
 try:
-    year_ = int(input('Enter year:'))
+    year_ = int(input('Enter year: '))
 except Exception as e:  # handling exception for 'year' input
     print(e)
     print("Enter integer only")
