@@ -1,32 +1,44 @@
+"""This program takes the month and year as user-input
+and prints the Calendar of the month using Queue storing
+in two Stacks. Stack here is also implemented using Linked List.
+
+@author Amit Kumar
+@version 1.0
+@since 09/01/2019
+"""
+
+# importing important modules
 from DataStructureProgram.Stack import *
+
+# creating the objects of stack class
 stack = Stack()
 stack1 = Stack()
 
 
+# function to check whether the entered year is a leap year or not
 def isleap_year(year):
     if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:  # checking whether the year is leap year or not
-        return True
+        return True  # returning True if the given year is a leap year
     else:
-        return False
+        return False  # returning False if the given year is not a leap year
 
 
+# this function contains the algorithm to process given @param month and @param year to print all the days and dates
+# in the calender format using Queue storing in two Stacks.
 def calender_stack(month, year):
-    """
-    This method is used to print calender of given month and year.
-    In this method calender is created using stack
-    :param month:month given ser
-    :param year: year given by year
-    :return: nothing
-    """
-    day = ['Sun', ' Mon', ' Tue', ' Wed', ' Thu', 'Fri', ' Sat']
 
-    days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    day = ['Sun', ' Mon', ' Tue', ' Wed', ' Thu', 'Fri', ' Sat']  # Stores the Month in a list
+
+    days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]  # since the index of list starts from 0 and month
 
     values = 1
-    d = 1
+    d = 1  # initializing the value of 'd' for first date of every month
 
     m = month
     y = year
+
+    # determining the day of the first date of any month so we can determine from which day we have to start printing
+    # the calender, final output of the set of these formulae is 0-6, i.e., Sun - Sat
     y0 = y - (14 - m) // 12
     x = y0 + y0 // 4 - y0 // 100 + y0 // 400
     m0 = m + 12 * ((14 - m) // 12) - 2
@@ -70,24 +82,19 @@ def calender_stack(month, year):
         print()
 
 
-def calender_stack_runner():
-    """
-    This method is used as runner for calender_stack(month, year) method
-    :return:  nothing
-    """
-    global year, month
-    try:
-        month = int(input('Enter Month'))
-    except Exception as e:
-        print(e)
-        print("Enter integer only ")
-    try:
-        year = int(input('Enter Year'))
-    except Exception as e:
-        print(e)
-        print("Enter integer only")
+global month_, year_  # globalizing the variables use them as local while handling exception
+try:
+    month_ = int(input('Enter Month: '))
+except Exception as e:  # handling exception for 'month' input
+    print(e)
+    print("Enter integer only ")
+try:
+    year_ = int(input('Enter year: '))
+except Exception as e:  # handling exception for 'year' input
+    print(e)
+    print("Enter integer only")
 
-    calender_stack(month, year)
-
-
-calender_stack_runner()
+try:
+    calender_stack(month_, year_)  # calling 'calender' method to print the calender
+except Exception as e:
+    print(e)
