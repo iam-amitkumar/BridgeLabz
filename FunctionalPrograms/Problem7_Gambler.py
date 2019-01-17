@@ -11,12 +11,26 @@ ii) completed the user desired no. of games iii) player won
 import utility.Utility
 import random
 
+global stake, goal, no_of_times
+
 print("\nEnter the value to put on stake ")
-stake = utility.Utility.get_integer()  # taking value of stake from the user
+try:
+    stake = utility.Utility.get_integer()  # taking value of stake from the user
+except Exception as e:
+    print(e)
+
 print("\nEnter your goal you want to earn ")
-goal = utility.Utility.get_integer()  # taking the value of goal from the user
+try:
+    goal = utility.Utility.get_integer()  # taking the value of goal from the user
+except Exception as e:
+    print(e)
+
 print("\nEnter the times you want to play ")
-no_of_times = utility.Utility.get_integer()  # taking the value of number of games user wants to play
+try:
+    no_of_times = utility.Utility.get_integer()  # taking the value of number of games user wants to play
+except Exception as e:
+    print(e)
+
 win = 0
 loss = 0
 count = 0
