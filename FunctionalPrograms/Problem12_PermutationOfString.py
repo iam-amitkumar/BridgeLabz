@@ -21,8 +21,13 @@ def permute(a, l, r):
             a[l], a[i] = a[i], a[l]  # backtrack
 
 
-string = utility.Utility.get_string()  # getting the string from the user
-n = len(string)  # getting the length of the user-input string
-a = list(string)  # converting the string to list to get the indexes of the string to swap the letters of it
-permute(a, 0, n-1)
+global string
 
+try:
+    string = utility.Utility.get_string()  # getting the string from the user
+except Exception as e:
+    print(e)
+
+n = len(string)  # getting the length of the user-input string
+a1 = list(string)  # converting the string to list to get the indexes of the string to swap the letters of it
+permute(a1, 0, n-1)
