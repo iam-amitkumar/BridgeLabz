@@ -8,7 +8,13 @@ brute force and print the prime factors of N.
 # Importing important modules
 import utility.Utility
 
-num = utility.Utility.get_integer()  # getting user input through function call
+global num
+
+try:
+    num = utility.Utility.get_integer()  # getting user input through function call
+except Exception as e:
+    print(e)
+
 print("\nPrime factors of", num, "are: ")
 for i in range(2, num+1):
     while num % i == 0:  # checking whether the current value 'i' is divisible by num or not
