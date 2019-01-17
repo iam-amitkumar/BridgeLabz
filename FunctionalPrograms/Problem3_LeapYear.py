@@ -8,7 +8,13 @@ year or not.
 # importing important modules
 import utility.Utility
 
-year = input("\nPlease enter the year: ")
+global year
+
+try:
+    year = input("\nPlease enter the year: ")
+except Exception as e:
+    print(e)
+
 # calling a function to check whether the user input year is 4 digit or not
 year = utility.Utility.get_four_digit_year(year)
 
