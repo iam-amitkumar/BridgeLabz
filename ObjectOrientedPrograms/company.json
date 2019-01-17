@@ -1,0 +1,26 @@
+{
+  "Blizzard": {
+    "company_name": "Blizzard",
+    "company_symbol": "Blizz",
+    "share_Price": 1420,
+    "total_share": 24
+  },
+  "Bridgelabz": {
+    "company_name": "Bridgelabz",
+    "company_symbol": "LLP",
+    "share_Price": 10000,
+    "total_share": 17
+  },
+  "Intel": {
+    "company_name": "Intel",
+    "company_symbol": "Int",
+    "share_Price": 1467,
+    "total_share": 21
+  },
+  "Nvidia": {
+    "company_name": "Nvidia",
+    "company_symbol": "Nvidia",
+    "share_Price": 1725,
+    "total_share": 36
+  }
+}
