@@ -10,9 +10,15 @@ will be computer.
 # importing important modules
 import random
 
+global player, p_rows, p_columns, player_name
+
 print("TIC TAC TOE GAME\n-----------------\n")
-player = int(input("Choose your number to play (2 - 9): "))
-player_name = input("Please enter your name: ")
+try:
+    player = int(input("Choose your number to play (2 - 9): "))
+    player_name = input("Please enter your name: ")
+except Exception as e:
+    print(e)
+
 print("Computer's number = 1\nYour number = ", player)
 board = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
@@ -53,8 +59,12 @@ while count_turn != 9:
             print(">>> Oops!!! Computer Wins and You Lost <<<")
             break
     if turn is False and count_turn <= 8:  # Player's turn because it's False
-        p_rows = int(input("Enter the row number (0-2): "))
-        p_columns = int(input("Enter the column number (0-2): "))
+        try:
+            p_rows = int(input("Enter the row number (0-2): "))
+            p_columns = int(input("Enter the column number (0-2): "))
+        except Exception as e:
+            print(e)
+
         if board[p_rows][p_columns] == 0:  # checking whether cell chosen by player is already occupied or not
             print(" ", player_name, " played: \n----------------")
             board[p_rows][p_columns] = player  # assigning player's symbol to the chosen unoccupied cell
