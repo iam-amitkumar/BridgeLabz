@@ -10,7 +10,13 @@ random number is generated where N is a user-input number.
 import utility.Utility
 import random
 
-number_of_coupons = utility.Utility.get_integer()  # getting input for Number of Coupons
+global number_of_coupons
+
+try:
+    number_of_coupons = utility.Utility.get_integer()  # getting input for Number of Coupons
+except Exception as e:
+    print(e)
+
 list1 = []
 count = 0
 while len(list1) != number_of_coupons:
