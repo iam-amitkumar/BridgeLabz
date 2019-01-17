@@ -10,9 +10,9 @@ list into a file.
 # importing important modules
 from DataStructureProgram.LinkedList import *
 
-global f
 
-def UnorderedList():
+def unordered_list():
+    global f
     # creating object of SingleLinkedList class of DataStructureProgram package to access all the methods
     l1 = SingleLinkedList()
 
@@ -48,6 +48,5 @@ def UnorderedList():
         f.close()  # closing the opened file
 
 
-
 if __name__ == '__main__':
-    UnorderedList()
+    unordered_list()
