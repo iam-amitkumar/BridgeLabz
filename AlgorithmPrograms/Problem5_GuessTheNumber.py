@@ -10,6 +10,8 @@ to find the number.
 # importing important modules
 import math
 
+global noOfTimes
+
 
 def question(low, high):
     if (high - low) == 1:  # if range is equal
@@ -26,7 +28,11 @@ def question(low, high):
         return 0
 
 
-noOfTimes = int(input("\nHow much time you want to ask the question:"))
+try:
+    noOfTimes = int(input("\nHow much time you want to ask the question:"))
+except Exception as e:
+    print(e)
+
 low1 = 0  # assigning low value for further search of the number on the principal of binary search
 high1 = int(math.pow(2, noOfTimes))  # assigning high as user-input value on the power of 2
 print()
