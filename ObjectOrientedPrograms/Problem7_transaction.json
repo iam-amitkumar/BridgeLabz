@@ -1,0 +1,36 @@
+{
+	"transaction": [{
+			"customer_name": "Amit",
+			"company_symbol": "Int",
+			"buy_sell": "Buy",
+			"total_share": 2,
+			"total_Price": 2934,
+			"time": "2019-01-20 19:45"
+		},
+		{
+			"customer_name": "Alisa",
+			"company_symbol": "LLP",
+			"buy_sell": "Sell",
+			"total_share": 1,
+			"total_Price": 10000,
+			"time": "2019-01-15 19:29"
+		},
+        {
+			"customer_name": "John",
+			"company_symbol": "Blizz",
+			"buy_sell": "Sell",
+			"total_share": 2,
+			"total_Price": 20000,
+			"time": "2018-12-8 10:35"
+		},
+        {
+			"customer_name": "Harry",
+			"company_symbol": "Nvidia",
+			"buy_sell": "Buy",
+			"total_share": 3,
+			"total_Price": 60000,
+			"time": "2019-01-2 14:48"
+		}
+	]
+
+}
