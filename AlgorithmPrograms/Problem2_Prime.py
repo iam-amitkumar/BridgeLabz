@@ -9,7 +9,13 @@ user-input number.
 import utility.Utility
 import util.Util
 
-number = utility.Utility.get_integer()
+global number
+
+try:
+    number = utility.Utility.get_integer()
+except Exception as e:
+    print(e)
+
 print("\nPrime numbers up to ", number, ": ")
 for i in range(2, number):  # checking the prime numbers from 2 to the user-input number
     res = util.Util.is_prime(i)  # passing each number of the range to get the boolean value
