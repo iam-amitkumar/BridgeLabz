@@ -22,7 +22,7 @@ random.shuffle(carddeck)  # shuffling the cards of deck present in 'carddeck' in
 # this function choose an element of first sub-list and an element from second sub-list of 'carddeck' list having
 # @param number of cards you want to distribute to first player
 def player1(n):
-    print("Player 1 gets:-\n")
+    print("Player 1 Gets:-\n")
     for i in range(n):
         print(carddeck[i][0], carddeck[i][1])  # printing an element from 1st sub-list and an element from 2nd sub-list
         carddeck.remove(carddeck[i])  # deleting the selected card from the list to avoid the repetition of card
@@ -31,7 +31,7 @@ def player1(n):
 # this function choose an element of first sub-list and an element from second sub-list of 'carddeck' list having
 # @param number of cards you want to distribute to second player
 def player2(n):
-    print("\nPlayer 2 gets:-\n")
+    print("\nPlayer 2 Gets:-\n")
     for j in range(n):
         print(carddeck[j][0], carddeck[j][1])  # printing an element from 1st sub-list and an element from 2nd sub-list
         carddeck.remove(carddeck[j])  # deleting the selected card from the list to avoid the repetition of card
@@ -40,7 +40,7 @@ def player2(n):
 # this function choose an element of first sub-list and an element from second sub-list of 'carddeck' list having
 # @param number of cards you want to distribute to third player
 def player3(n):
-    print("\nPlayer 3 gets:-\n")
+    print("\nPlayer 3 Gets:-\n")
     for k in range(n):
         print(carddeck[k][0], carddeck[k][1])  # printing an element from 1st sub-list and an element from 2nd sub-list
         carddeck.remove(carddeck[k])  # deleting the selected card from the list to avoid the repetition of card
@@ -49,7 +49,7 @@ def player3(n):
 # this function choose an element of first sub-list and an element from second sub-list of 'carddeck' list having
 # @param number of cards you want to distribute to fourth player
 def player4(n):
-    print("\nPlayer 4 gets:-\n")
+    print("\nPlayer 4 Gets:-\n")
     for l in range(n):
         print(carddeck[l][0], carddeck[l][1])  # printing an element from 1st sub-list and an element from 2nd sub-list
         carddeck.remove(carddeck[l])  # deleting the selected card from the list to avoid the repetition of card
