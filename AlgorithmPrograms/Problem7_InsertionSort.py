@@ -10,7 +10,13 @@ algorithm
 import utility.Utility
 import string
 
-u_string = input("Enter the number of string you want to enter: ")
+global u_string
+
+try:
+    u_string = input("Enter the number of string you want to enter: ")
+except Exception as e:
+    print(e)
+
 list1 = u_string.split()  # converting user-input string into string list
 input_list = [word.strip(string.punctuation) for word in list1]  # trimming commas/punctuation present in the user list
 user_string = ' '.join(input_list)  # converting trimmed list into string separated by space to print as unsorted string
