@@ -9,7 +9,14 @@ with the user input name.
 # Importing important modules
 import utility.Utility
 
-a = "Hello <<UserName>>, How are you?"
+global a
+
+try:
+    a = "Hello <<UserName>>, How are you?"
+
+except Exception as e:
+    print(e)
+
 name = utility.Utility.get_string()  # calling get_string functions
 res = a[0:6]+name+a[18:32]  # concatenation substring before <<UserName>> + user input name + substring after
 # <<UserName>>
