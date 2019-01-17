@@ -9,7 +9,13 @@ is anagram as well as palindrome or not
 import utility.Utility
 import util.Util
 
-num = utility.Utility.get_integer()
+global num
+
+try:
+    num = utility.Utility.get_integer()
+except Exception as e:
+    print(e)
+
 res = False
 print("\nPrime number which are palindrome and anagram up to", num, ": ")
 for i in range(2, num):
