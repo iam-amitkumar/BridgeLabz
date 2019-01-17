@@ -11,7 +11,14 @@ argument.
 # importing sys module to take the input through command-line
 import sys
 
-num = int(sys.argv[1])  # casting from string type to integer type because type of input through command-line is string
+global num
+
+try:
+    num = int(sys.argv[1])  # casting from string type to integer type because type of input through command-line
+    # is string
+
+except Exception as e:
+    print(e)
 
 print("Value of N: ", num)
 if num >= 0:  # checking whether the user input is in range or not, ie., (N >= 0)
